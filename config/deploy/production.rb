@@ -11,7 +11,7 @@ set :server_name, "www.example.com example.com"
 # at filepaths
 set :full_app_name, "#{fetch(:application)}_#{fetch(:stage)}"
 
-server '52.27.36.128', user: 'deployer', roles: %w{web app db}, primary: true
+server 'ec2-52-27-36-128.us-west-2.compute.amazonaws.com', user: 'deployer', roles: %w{web app db}, primary: true
 
 set :deploy_to, "/home/#{fetch(:deploy_user)}/apps/#{fetch(:full_app_name)}"
 

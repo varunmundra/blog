@@ -7,7 +7,7 @@ set :repo_url, 'git@github.com:varunmundra/blog.git'
 
 # setup rbenv.
 set :rbenv_type, :system
-set :rbenv_ruby, '1.9.3p484'
+#set :rbenv_ruby, '0.4.0-151-g83ac0fb'
 set :rbenv_prefix, "RBENV_ROOT=#{fetch(:rbenv_path)} RBENV_VERSION=#{fetch(:rbenv_ruby)} #{fetch(:rbenv_path)}/bin/rbenv exec"
 set :rbenv_map_bins, %w{rake gem bundle ruby rails}
 
