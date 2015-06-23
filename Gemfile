@@ -34,6 +34,8 @@ gem 'capistrano-bundler'
 
 # if you are using RBENV
 gem 'capistrano-rbenv'
+gem 'net-ssh', '2.7.0'
+gem 'sshkit', '1.3'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
